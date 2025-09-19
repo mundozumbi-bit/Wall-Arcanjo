@@ -1,0 +1,121 @@
+
+@font-face {
+  font-family: 'CSMargiela';
+  src: url('/CSMargiela-Regular_demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FuturaLight';
+  src: url('/futura light bt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 288 89% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 180 35% 57%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 0% 94%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 288 89% 20%;
+
+    --radius: 0.5rem;
+    --font-title: 'CSMargiela', Ubuntu, Arial, sans-serif;
+    --font-body: 'FuturaLight', Ubuntu, Arial, sans-serif;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-white text-foreground;
+    font-family: var(--font-body);
+    scrollbar-width: thin;
+    scrollbar-color: #6D0341 #f1f1f1;
+  }
+
+  h1, h2, h3, h4, h5, h6, .section-heading {
+    font-family: var(--font-title);
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #6D0341;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A1196D;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply text-primary text-3xl md:text-4xl font-bold mb-8 relative inline-block;
+  }
+
+  .section-heading::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-1/2 h-1 bg-secondary mt-1;
+  }
+  
+  .nav-link {
+    @apply text-gray-700 hover:text-primary transition-colors relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-[-5px] w-0 h-[2px] bg-primary transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .active-nav-link::after {
+    @apply w-full;
+  }
+}
