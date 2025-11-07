@@ -10,7 +10,7 @@ const Tatuadores = () => {
     {
       id: 1,
       name: "Wall Arcanjo",
-      bio: "Fundadora do WALL ARCANJO, Wall é uma artista visionária com mais de 15 anos de experiência. Especialista em realismo e geometrico, ela transformou sua paixão pela arte em um dos estúdios mais respeitados da cidade.",
+      bio: "Com quase duas décadas dedicadas à arte da tatuagem, Wall Arcanjo iniciou sua trajetória em 2006, enquanto cursava Enfermagem. Começou como body piercing e aprendeu as bases da tatuagem com seus irmãos, também tatuadores, no antigo Arcanjo Tattoo, estúdio que ganhou destaque em São Paulo. Desde então, construiu uma carreira marcada por inovação, empreendedorismo e ensino. Foi capa da revista Methalhead, fundou lojas e estúdios por todo o Brasil e se tornou referência na formação e desenvolvimento de tatuadores. Em 2009, passou a ministrar seus primeiros cursos sempre unindo técnica, arte e cuidado com o corpo humano. Também participou de diversas convenções nacionais e internacionais, incluindo em Marseille e Nice (França) e no Brasil atuou como jurada em diversos eventos. Em 2019, liderou o projeto Inkerz Tattoo onde atuou no desenvolvimento de pigmentos e cores, e na Inkerz Academy formou diversos profissionais e fortaleceu a cultura técnica da tatuagem. Em 2025 lançou sua marca própria, a Wall Arcanjo Tattoo & Academy, consolidando sua vocação como artista, empreendedora e educadora. Atualmente, cursa Biomedicina e segue como uma das vozes mais ativas na profissionalização e valorização da tatuagem no Brasil.",
       instagram: "@walarcanjo",
       profileImage: "./images/Tatuadores/Wall/perfil.png",
       workImages: [
