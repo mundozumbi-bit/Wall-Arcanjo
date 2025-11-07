@@ -181,7 +181,7 @@ const Tatuadores = () => {
       name: "Sandro Wayne",
       bio: "Sandro Wayne é um tatuador com mais de 20 anos de experiência. Inicialmente, ele tatuava uma variedade de desenhos, mas atualmente prefere trabalhos em preto e branco, explorando diferentes nuances de cinza e preto. Ao longo de sua carreira, Sandro vivenciou experiências internacionais, tatuando em diversos estúdios e participando de convenções, o que elevou sua experiência também na técnica que reproduz o efeito aquarela na tatuagem.",
       instagram: "@sandrowayne",
-      profileImage: "./images/Tatuadores/Sandro/perfil.jpg",
+      profileImage: "./images/Tatuadores/Sandro/work3.jpg",
 
       workImages: [
         "./images/Tatuadores/Sandro/work1.jpg",
